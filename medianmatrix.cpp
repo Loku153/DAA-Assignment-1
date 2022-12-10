@@ -10,7 +10,7 @@ int main()
   cout<<"C = ";
   cin>>col;
   //entering elements into matrix
-  cout<<"M["<<row<<"]["<<col<<"] = ";
+  cout<<"\nM["<<row<<"]["<<col<<"]\n";
   for (int i=0;i<row;i++)
     for (int j=0;j<col;j++)
      cin>>M[i][j];
@@ -24,8 +24,7 @@ int main()
     }
   //sorting elements of matrix in array
   sort(median,median+n);
-  cout<<median[n/2]<<endl;
+  cout<<"\nMedian is "<<median[n/2]<<endl;
   return 0;
 }
-
 
