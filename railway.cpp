@@ -4,12 +4,13 @@ using namespace std;
 int main()
 {
  int n;
+ cout<<"Number of slots:";
  cin>>n;
  int arr[n],dep[n];
- 
+ cout<<"Enter Arrival timings\n";
  for(int i=0;i<n;i++)
  cin>>arr[i];
- 
+ cout<<"Enter Departure timings\n";
  for(int i=0;i<n;i++)
  cin>>dep[i];
  // Sorting arrival and departure arrays
@@ -32,6 +33,6 @@ int main()
   if(pn>res)
    res=pn;
  }
- cout<<res;
+ cout<<"\nNumber of PLATFORMS = "<<res;
  return 0;
 }
